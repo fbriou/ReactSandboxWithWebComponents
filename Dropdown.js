@@ -15,7 +15,7 @@ export class Dropdown extends Component {
     }
   }
 
-  componentWillReceiveProps(props) {
+  componentDidUpdate(props) {
     if (props.title !== this.props.title) {
       this.dropdownRef.current.title = props.title;
     }

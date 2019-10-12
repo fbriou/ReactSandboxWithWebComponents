@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <a href="https://coryrylan.com/blog/using-web-components-in-react">
+        <a>
           <h1>React Application using Web Components</h1>
         </a>
 
@@ -33,6 +33,7 @@ class App extends Component {
   }
 
   handleShow(e) {
+    console.log(e.detail)
     this.setState({ show: e.detail });
   }
 }
